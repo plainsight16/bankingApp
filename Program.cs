@@ -38,7 +38,25 @@ namespace BankingApp
             switch(response)
             {
                 case "1": 
-                    //sign in
+                    Console.Write("Enter AccountNumber: ");
+                    string AccountNumber = Console.ReadLine().Trim();
+                    Account account = Bank.SignIn(AccountNumber);
+
+                    if (account == null)
+                    {
+                        Console.WriteLine("Account Does Not Exist");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Welcome {account.Owner}");
+                        Console.WriteLine("Select an Option");
+                        Console.WriteLine("1. Deposit");
+                        Console.WriteLine("2. Withdraw");
+                        Console.WriteLine("3. Check Balance");
+                        Console.WriteLine("4. Exit");
+                        string response2 = Console.ReadLine().Trim();
+                    }
+                    menu();
                     break;
                 case "2":
                     //newAccount
@@ -51,7 +69,41 @@ namespace BankingApp
                     menu();
                     break;
             }
+
             
+        }
+
+        public static void subMenu()
+        {
+            Console.WriteLine("Select an Option");
+            Console.WriteLine("1. Deposit");
+            Console.WriteLine("2. Withdraw");
+            Console.WriteLine("3. Check Balance");
+            Console.WriteLine("4. Exit");
+            string response = Console.ReadLine().Trim();
+            //Todo : complete subMenu
+            switch(response)
+            {
+                case "1":
+                    Console.Write("Enter Amount: ");
+                    string amount = Console.ReadLine().Trim();
+                    break;
+                case "2":
+                    Console.Write("Enter Amount: ");
+                    string amount = Console.ReadLine().Trim();
+                    break;
+                case "3":
+                    Console.Write("Enter Amount: ");
+                    string amount = Console.ReadLine().Trim();
+                    break;
+                case "4":
+                    Console.WriteLine("Exiting...");
+                    break;
+                default:
+                    Console.WriteLine("Incorrect Response. Try Again");
+                    subMenu();
+                    break;
+            }    
         }
 
         public class Account
@@ -61,13 +113,13 @@ namespace BankingApp
 
             private string Owner {get; set;}
 
-            private double Balance{ get; private set };
+            private double Balance{ get; set; }
 
             private static int NumberCounter = 0;
 
-            private static year = DateTime.Now.Year % 100;
+            private static int year = DateTime.Now.Year % 100;
 
-            public Account(string AccountNumber, string Owner, string Balance)
+            public Account(string AccountNumber, string Owner, double Balance = 0)
             {
                 this.AccountNumber = AccountNumber;
                 this.Owner = Owner;
@@ -122,7 +174,7 @@ namespace BankingApp
            
             public static Account SignIn(string AccountNumber)
             {
-                if(Accounts.TryGetValue(AccountNumber, out Account Account))
+                if(BankAccounts.TryGetValue(AccountNumber, out Account account))
                 {
                    return account;
                 }
@@ -135,38 +187,17 @@ namespace BankingApp
             public static void CreateAccount(string Owner)
             {
                 string AccountNumber = Account.GenerateAccountNumber(Owner);
-
+                //Todo: remove genrateAccount Number from Account class and place in the Bank class
                 Account account = new Account(AccountNumber, Owner);
 
-                if(Accounts.TryGetValue(AccountNumber, out Account Account))
+                if(BankAccounts.TryGetValue(AccountNumber, out Account Account))
                 {
                    Console.WriteLine("Account Already Exists");
                 }
                 else
                 {
-                    Accounts.Add(AccountNumber, account);
+                    BankAccounts.Add(AccountNumber, account);
                 }  
-            }
-
-            public static void updateTextFile()
-            {
-                //update text file
-            }
-
-            public static void updateDictionary()
-            {
-                //update dictionary
-            }
-
-    
-            public static void retrieveFromTextFile()
-            {
-                //retrieve from text file
-            }
-
-            public static void retrieveFromDictionary()
-            {
-                //retrieve from dictionary
             }
 
         }
