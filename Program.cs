@@ -11,7 +11,7 @@ namespace BankingApp
             withdrawal - update textfile amount()
             check amount - retrieve from text file()
             create_account - add to text file
-            sign in - get details from a particular account using password only.
+            sign in - get details from a particular account using Account Number only.
         */
 
         /*
@@ -56,19 +56,27 @@ namespace BankingApp
 
         public class Account
         {
-            private String AccountNumber { get; }
 
-            private Double Balance{ get; private set };
+            private string AccountNumber { get; }
 
-            public Account(String AccountNumber, String Balance)
+            private string Owner {get; set;}
+
+            private double Balance{ get; private set };
+
+            private static int NumberCounter = 0;
+
+            private static year = DateTime.Now.Year % 100;
+
+            public Account(string AccountNumber, string Owner, string Balance)
             {
                 this.AccountNumber = AccountNumber;
+                this.Owner = Owner;
                 this.Balance = Balance;
             }
 
-            public void Withdraw(Double amount)
+            public void Withdraw(double amount)
             {
-                if (amount < this.Balance)
+                if (amount <= this.Balance)
                 {
                     this.Balance -= amount;
                 }
@@ -79,51 +87,65 @@ namespace BankingApp
                 }
             }
 
-            public void Deposit(Double amount)
+            public void Deposit(double amount)
             {
                 if (amount > 0)
                 {
                     this.Balance += amount;
                 }
-                
+
                 else
                 {
                     Console.WriteLine("Invalid Amount");
                 }
             }
 
+            public static string GenerateAccountNumber(string Owner)
+            {
+                formattedOwner = Owner.Trim().ToLower();
+                return $"ACC0{year}0{formattedOwner}";
+            }
+
+            public override string ToString()
+            {
+                return $"AccountNumber: {this.AccountNumber}\nOwner:{this.Owner}\nBalance:{this.Balance}\n"
+            }
+
         }
 
        
-        public class Database
+        public class Bank
         {
-            private static String path = "C:\\Users\\user\\Desktop\\accounts.txt";
-            public static Dictionary<String, Account> Accounts = new Dictionary<String, Account>();
+            private static string Path = "C:\\Users\\user\\Desktop\\accounts.txt";
+            public static Dictionary<string, Account> BankAccounts = new Dictionary<String, Account>();
 
            
-            public static void signIn(String username, String password)
+            public static Account SignIn(string AccountNumber)
             {
-                if(Accounts.TryGetValue(username, out Account account))
+                if(Accounts.TryGetValue(AccountNumber, out Account Account))
                 {
-                    if(account.getPassword().Equals(password))
-                    {
-                        return account;
-                    }
-                    else
-                    {
-                        //return null
-                    }
+                   return account;
                 }
                 else
                 {
-                    //return null
+                    return null;
                 }
             }
 
-            public static void createAccount(String username, String password)
+            public static void CreateAccount(string Owner)
             {
-                Account account = new Account(username, password);
-                Accounts.Add(username, account);
+                string AccountNumber = Account.GenerateAccountNumber(Owner);
+
+                Account account = new Account(AccountNumber, Owner);
+
+                if(Accounts.TryGetValue(AccountNumber, out Account Account))
+                {
+                   Console.WriteLine("Account Already Exists");
+                }
+                else
+                {
+                    Accounts.Add(AccountNumber, account);
+                }  
             }
 
             public static void updateTextFile()
