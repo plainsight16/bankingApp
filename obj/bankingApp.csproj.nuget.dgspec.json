@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\User\\documents\\sr\\c#\\bankingApp\\bankingApp.csproj": {}
+    "C:\\Users\\User\\documents\\sr\\c#\\bankingApp\\bankingApp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\User\\documents\\sr\\c#\\bankingApp\\bankingApp.csproj": {
+    "C:\\Users\\User\\documents\\sr\\c#\\bankingApp\\bankingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\User\\documents\\sr\\c#\\bankingApp\\bankingApp.csproj",
+        "projectUniqueName": "C:\\Users\\User\\documents\\sr\\c#\\bankingApp\\bankingApp.csproj",
         "projectName": "bankingApp",
-        "projectPath": "c:\\Users\\User\\documents\\sr\\c#\\bankingApp\\bankingApp.csproj",
+        "projectPath": "C:\\Users\\User\\documents\\sr\\c#\\bankingApp\\bankingApp.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\User\\documents\\sr\\c#\\bankingApp\\obj\\",
+        "outputPath": "C:\\Users\\User\\documents\\sr\\c#\\bankingApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

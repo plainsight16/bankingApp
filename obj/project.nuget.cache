@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RqC5TXKu48GWKWLIUMC0YreLy5J6hk+8yTbnHjOpOFCifYkGX4ZB0U1Fqyfsa0pGpZAexGM0+xPXNGUUaan4IQ==",
+  "dgSpecHash": "Iom1eWW/l4N+jGJGCEfsOfKXIIBzM/zlV6d3DD47BJ7WqBFVQAFHKvNc4jQrpTq4Y+6Zlwr3L9w98WHKqUwBUw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\User\\documents\\sr\\c#\\bankingApp\\bankingApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\User\\documents\\sr\\c#\\bankingApp\\bankingApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
