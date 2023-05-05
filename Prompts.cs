@@ -8,6 +8,7 @@ namespace BankingApp
 
         public static void menu()
         {   
+            JObject retrieveAccounts = JObject.Parse(Bank.retrieveAccounts());
             Console.WriteLine();
             Console.WriteLine("Main Menu");
             Console.WriteLine("Select an Option");
