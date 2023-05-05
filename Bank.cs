@@ -55,6 +55,58 @@ namespace BankingApp
         }
 
     
+        public static string saveAccounts()
+        {
+            var response = new Object();
+            try
+            {
+            
+                string AccountsJson = JsonConvert.SerializeObject(BankAccounts, Formatting.Indented);
+                string EmailsJson = JsonConvert.SerializeObject(EMAILS, Formatting.Indented);
+          
+            
+                File.WriteAllText("BankAccounts.json", AccountsJson);
+                File.WriteAllText("Emails.json", EmailsJson);
+                response = new {
+                    status = true,
+                    message = "Accounts Saved Successfully"
+                };
+                return JsonConvert.SerializeObject(response);
+            }
+            catch (Exception e)
+            {
+                response = new {
+                    status = false,
+                    message = "Error Saving Accounts"
+                };
+                return JsonConvert.SerializeObject(response);
+            }
+        }
+
+        // public static string retrieveAccounts()
+        // {
+        //     var response = new Object();
+        //     try
+        //     {
+        //         string AccountsJson = File.ReadAllText("BankAccounts.json");
+        //         string EmailsJson = File.ReadAllText("Emails.json");
+        //         BankAccounts = JsonConvert.DeserializeObject<Dictionary<string, BankAccount>>(AccountsJson);
+        //         EMAILS = JsonConvert.DeserializeObject<List<string>>(EmailsJson);
+        //         response = new {
+        //             status = true,
+        //             message = "Accounts Retrieved Successfully"
+        //         };
+        //         return JsonConvert.SerializeObject(response);
+        //     }
+        //     catch (Exception e)
+        //     {
+        //         response = new {
+        //             status = false,
+        //             message = "Error Retrieving Accounts"
+        //         };
+        //         return JsonConvert.SerializeObject(response);
+        //     }
+        // }
     
     }
 }

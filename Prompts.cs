@@ -126,7 +126,10 @@ namespace BankingApp
 
         public static void exitPrompt()
         {
+            JObject message = JObject.Parse(Bank.saveAccounts());
             Console.WriteLine("Exiting...");
+            Console.WriteLine(message["message"]);
+            
         }
 
         public static void signOutPrompt()

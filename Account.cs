@@ -4,14 +4,14 @@ namespace BankingApp
 {
     public class BankAccount
     {
-        private double ID;
-        private string username;
-        private string name;
-        private string PIN;
-        private string email;
-        private string phone;
-        private string AccountNumber;
-        private double Balance;
+        public double ID {get; private set;}
+        public string username {get; private set;}
+        public string name {get; private set;}
+        public string PIN {get; private set;}
+        public string email {get; private set;}
+        public string phone {get; private set;}
+        public string AccountNumber {get; private set;}
+        public double Balance {get; private set;}
 
         public BankAccount(double ID, string username, string name, string PIN, string email, string phone)
         {
