@@ -1,7 +1,7 @@
 using Newtonsoft.Json;
 namespace BankingApp
 {
-     public class Bank
+    public class Bank
     {
         private static double id = 0;
         private static Dictionary<string, BankAccount> BankAccounts = new Dictionary<string, BankAccount>();
@@ -41,7 +41,7 @@ namespace BankingApp
             }
             else
             {
-                id++;
+                id =  BankAccounts.LastOrDefault().Value.ID + 1;
                 BankAccount account = new BankAccount(id, username, name, PIN, email, phone);
                 BankAccounts.Add(username, account);
                 string accountDetails = account.ToString();

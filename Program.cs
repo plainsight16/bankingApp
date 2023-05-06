@@ -5,7 +5,9 @@ namespace BankingApp
     {
         public static void Main(String []args)
         {
+            Prompts.retrieveAccountsPrompt();
             Prompts.menu();
+            Prompts.saveAccountsPrompt();
         }
         
     }

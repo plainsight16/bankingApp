@@ -6,7 +6,37 @@
     "PIN": "1234",
     "email": "timilehin@gmail.com",
     "phone": "08179386235",
-    "AccountNumber": "1233969",
+    "AccountNumber": "1231234",
     "Balance": 0.0
+  },
+  "pepe": {
+    "ID": 2.0,
+    "username": "pepe",
+    "name": "Pepe Green",
+    "PIN": "1234",
+    "email": "pepe@gmail.com",
+    "phone": "08062016287",
+    "AccountNumber": "2239967",
+    "Balance": 0.0
+  },
+  "modupe": {
+    "ID": 3.0,
+    "username": "modupe",
+    "name": "Modupe Bakare",
+    "PIN": "1234",
+    "email": "onatayo96@gmail.com",
+    "phone": "08179386235",
+    "AccountNumber": "3232127",
+    "Balance": 0.0
+  },
+  "hotrod": {
+    "ID": 4.0,
+    "username": "hotrod",
+    "name": "hotrod dupe",
+    "PIN": "1234",
+    "email": "hotrod@gmail.com",
+    "phone": "08179386235",
+    "AccountNumber": "4239678",
+    "Balance": 800.0
   }
 }

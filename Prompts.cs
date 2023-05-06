@@ -6,9 +6,15 @@ namespace BankingApp
 
         static BankAccount account = null;
 
+        
+        public static void retrieveAccountsPrompt()
+        {
+            JObject retrieveAccounts = JObject.Parse(Bank.retrieveAccounts());
+            Console.WriteLine(retrieveAccounts["message"]);
+        }
+        
         public static void menu()
         {   
-            JObject retrieveAccounts = JObject.Parse(Bank.retrieveAccounts());
             Console.WriteLine();
             Console.WriteLine("Main Menu");
             Console.WriteLine("Select an Option");
@@ -127,10 +133,7 @@ namespace BankingApp
 
         public static void exitPrompt()
         {
-            JObject message = JObject.Parse(Bank.saveAccounts());
             Console.WriteLine("Exiting...");
-            Console.WriteLine(message["message"]);
-            
         }
 
         public static void signOutPrompt()
@@ -139,6 +142,11 @@ namespace BankingApp
             account = null;
         }
         
+        public static void saveAccountsPrompt()
+        {
+            JObject message = JObject.Parse(Bank.saveAccounts());
+            Console.WriteLine(message["message"]);
+        }
         public static Dictionary<string, Action> MainMenuOptions = new Dictionary<string, Action>()
         {
             {"1", SignInPrompt},
