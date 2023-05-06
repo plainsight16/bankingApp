@@ -192,7 +192,7 @@ namespace BankingApp
             }
             else
             {
-                Console.WriteLine("Invalid Phone Number");
+                Console.WriteLine("Phone Number must be 11 digits");
                 return validatePhone();
             }
         }
@@ -207,7 +207,7 @@ namespace BankingApp
             }
             else
             {
-                Console.WriteLine("Invalid PIN");
+                Console.WriteLine("PIN must be 4 digits");
                 return validatePIN();
             }
         }
