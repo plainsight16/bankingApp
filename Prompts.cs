@@ -1,8 +1,9 @@
-using Newtonsoft.Json;
+// Purpose: Contains the prompts for the user to interact with the banking app
 using Newtonsoft.Json.Linq;
 namespace BankingApp
 {
-    public class Prompts{
+    public class Prompts
+    {
 
         static BankAccount account = null;
 

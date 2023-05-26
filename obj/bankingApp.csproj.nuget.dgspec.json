@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\documents\\sr\\c#\\bankingApp\\bankingApp.csproj": {}
+    "c:\\Users\\User\\Documents\\sr\\c#\\bankingApp\\bankingApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\documents\\sr\\c#\\bankingApp\\bankingApp.csproj": {
+    "c:\\Users\\User\\Documents\\sr\\c#\\bankingApp\\bankingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\documents\\sr\\c#\\bankingApp\\bankingApp.csproj",
+        "projectUniqueName": "c:\\Users\\User\\Documents\\sr\\c#\\bankingApp\\bankingApp.csproj",
         "projectName": "bankingApp",
-        "projectPath": "C:\\Users\\User\\documents\\sr\\c#\\bankingApp\\bankingApp.csproj",
+        "projectPath": "c:\\Users\\User\\Documents\\sr\\c#\\bankingApp\\bankingApp.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\documents\\sr\\c#\\bankingApp\\obj\\",
+        "outputPath": "c:\\Users\\User\\Documents\\sr\\c#\\bankingApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
