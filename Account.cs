@@ -116,6 +116,16 @@ namespace BankingApp
         {
             return username;
         }
+        
+        /// <summary>
+        /// returns the email of the account
+        /// </summary>
+        /// <returns></returns>
+        public string getEmail()
+        {
+            return email;
+        }
+        
         /// <summary>
         /// returns the pin of the account
         /// </summary>
@@ -139,7 +149,7 @@ namespace BankingApp
         /// <returns></returns>
         public override string ToString()
         {
-            return $"\nAccountNumber: {this.AccountNumber}\nUsername: {this.username}\nName: {this.name}\nEmail: {this.email}\nPhone: {this.phone}\nBalance:{this.Balance}\nPIN: {this.PIN}\n";
+            return $"\nAccountNumber: {this.AccountNumber}\nUsername: {this.username}\nName: {this.name}\nEmail: {this.email}\nPhone: {this.phone}\nBalance: {this.Balance}\n";
         }
 
     }
