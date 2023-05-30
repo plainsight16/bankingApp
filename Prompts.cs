@@ -7,13 +7,18 @@ namespace BankingApp
 
         static BankAccount account = null;
 
-        
+        /// <summary>
+        /// Prompts the user to retrieve the accounts
+        /// </summary>
         public static void retrieveAccountsPrompt()
         {
             JObject retrieveAccounts = JObject.Parse(Bank.retrieveAccounts());
             Console.WriteLine(retrieveAccounts["message"]);
         }
         
+        /// <summary>
+        /// Main menu for the banking app
+        /// </summary>
         public static void menu()
         {   
             Console.WriteLine();
@@ -37,6 +42,9 @@ namespace BankingApp
             }
         }  
         
+        /// <summary>
+        /// Sub menu for the banking app
+        /// </summary>
         public static void subMenu()
         {
             Console.WriteLine();
@@ -61,6 +69,9 @@ namespace BankingApp
             }
         }
 
+        /// <summary>
+        /// Prompts the user to sign in
+        /// </summary>
         public static void SignInPrompt()
         {
             string username = Validation.validateUsername();
@@ -78,6 +89,9 @@ namespace BankingApp
             }
         }
       
+        /// <summary>
+        /// Prompts the user to deposit
+        /// </summary>
         public static void DepositPrompt()
         {
             double amount = Validation.validateAmount();
@@ -93,6 +107,9 @@ namespace BankingApp
             }   
         }
 
+        /// <summary>
+        /// Prompts the user to withdraw
+        /// </summary>
         public static void WithdrawPrompt()
         {
             double amount = Validation.validateAmount();
@@ -108,11 +125,17 @@ namespace BankingApp
             };
         }
         
+        /// <summary>
+        /// Prompts the user to view the account
+        /// </summary>
         public static void ViewAccountPrompt()
         {
             Console.WriteLine($"{account.ToString()}");
         }
         
+        /// <summary>
+        /// Prompts the user to create an account
+        /// </summary>
         public static void CreateAccountPrompt()
         {
             string username = Validation.validateUsername();
@@ -132,22 +155,37 @@ namespace BankingApp
             }
         }
 
+        /// <summary>
+        /// Prompts the user to exit
+        /// </summary>
         public static void exitPrompt()
         {
             Console.WriteLine("Exiting...");
         }
 
+        /// <summary>
+        /// Prompts the user to sign out
+        /// </summary>
         public static void signOutPrompt()
         {
             Console.WriteLine("Signing Out...");
             account = null;
         }
         
+        /// <summary>
+        /// Prompts the user to save the accounts
+        /// </summary>
         public static void saveAccountsPrompt()
         {
             JObject message = JObject.Parse(Bank.saveAccounts());
             Console.WriteLine(message["message"]);
         }
+        /// <summary>
+        /// Dictionary containing the main menu options
+        /// </summary>
+        /// <typeparam name="string"></typeparam>
+        /// <typeparam name="Action"></typeparam>
+        /// <returns></returns>
         public static Dictionary<string, Action> MainMenuOptions = new Dictionary<string, Action>()
         {
             {"1", SignInPrompt},
@@ -155,6 +193,12 @@ namespace BankingApp
             {"3", exitPrompt}
         };
     
+        /// <summary>
+        /// Dictionary containing the sub menu options
+        /// </summary>
+        /// <typeparam name="string"></typeparam>
+        /// <typeparam name="Action"></typeparam>
+        /// <returns></returns>
         public static Dictionary<string, Action> SubMenuOptions = new Dictionary<string, Action>()
         {
             {"1", DepositPrompt},
@@ -167,6 +211,10 @@ namespace BankingApp
 
     public class Validation
     {
+        /// <summary>
+        /// Validates the email address
+        /// </summary>
+        /// <returns></returns>
         public static string validateEmail()
         {
             Console.Write("Enter Email: ");
@@ -183,6 +231,10 @@ namespace BankingApp
         }
 
         
+        /// <summary>
+        /// Validates the phone number
+        /// </summary>
+        /// <returns></returns>
         public static string validatePhone()
         {
             Console.Write("Enter Phone Number: ");
@@ -198,6 +250,10 @@ namespace BankingApp
             }
         }
 
+        /// <summary>
+        /// Validates the PIN
+        /// </summary>
+        /// <returns></returns>
         public static string validatePIN()
         {
             Console.Write("Enter PIN: ");
@@ -213,6 +269,10 @@ namespace BankingApp
             }
         }
 
+        /// <summary>
+        /// Validates the name
+        /// </summary>
+        /// <returns></returns>
         public static string validateName()
         {
             Console.Write("Enter Name: ");
@@ -229,6 +289,10 @@ namespace BankingApp
         }
 
         
+        /// <summary>
+        /// Validates the username
+        /// </summary>
+        /// <returns></returns>
         public static string validateUsername()
         {
             Console.Write("Enter Username: ");
@@ -244,6 +308,10 @@ namespace BankingApp
             }
         }
     
+        /// <summary>
+        /// Validates the amount
+        /// </summary>
+        /// <returns></returns>
         public static double validateAmount()
         {
             Console.Write("Enter Amount: ");
