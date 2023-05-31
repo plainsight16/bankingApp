@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2fvv3GqyQcJ7qXxAMIETcnXOnT4qOVR+IB6ya2MDiXG7a0xetjd9k3Qq6W67ca9ZHNzG8NDwyoPp5GV5stJ+Eg==",
+  "dgSpecHash": "SastuVLaHdthENu/dYrSWXKyX2XPO8VVQ1aAoTob2rD6WlRRY5pOZS/nG6UXigOcfBXOt17b8qz70wNXint+bw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Julius Alibrown\\Desktop\\class\\abdulahi\\bankingApp\\bankingApp.csproj",
+  "projectFilePath": "C:\\Users\\Elite folio9470m\\Source\\Repos\\bankingApp\\bankingApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Julius Alibrown\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\Elite folio9470m\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

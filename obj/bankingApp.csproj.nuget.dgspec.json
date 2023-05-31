@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Julius Alibrown\\Desktop\\class\\abdulahi\\bankingApp\\bankingApp.csproj": {}
+    "C:\\Users\\Elite folio9470m\\Source\\Repos\\bankingApp\\bankingApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Julius Alibrown\\Desktop\\class\\abdulahi\\bankingApp\\bankingApp.csproj": {
+    "C:\\Users\\Elite folio9470m\\Source\\Repos\\bankingApp\\bankingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Julius Alibrown\\Desktop\\class\\abdulahi\\bankingApp\\bankingApp.csproj",
+        "projectUniqueName": "C:\\Users\\Elite folio9470m\\Source\\Repos\\bankingApp\\bankingApp.csproj",
         "projectName": "bankingApp",
-        "projectPath": "C:\\Users\\Julius Alibrown\\Desktop\\class\\abdulahi\\bankingApp\\bankingApp.csproj",
-        "packagesPath": "C:\\Users\\Julius Alibrown\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Julius Alibrown\\Desktop\\class\\abdulahi\\bankingApp\\obj\\",
+        "projectPath": "C:\\Users\\Elite folio9470m\\Source\\Repos\\bankingApp\\bankingApp.csproj",
+        "packagesPath": "C:\\Users\\Elite folio9470m\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Elite folio9470m\\Source\\Repos\\bankingApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Julius Alibrown\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Elite folio9470m\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
