@@ -1,9 +1,16 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "ADOCSn5W9GGu02xUjMTpYazIMUK3H9ct6XckwaZaRWKp7SxnUWWUpoIFe5hIyVNAWShvUCZzTT6p0dD38Q4VUg==",
+||||||| 744fe68
+  "dgSpecHash": "+nWDu47Kce1kg7XR5Zkuvlm9TpjIKh3F9ZByy+RClVuwP6I7YTXKJoajpkUO66BWc+M1JHGtVggwGB0PhkPjWw==",
+=======
+  "dgSpecHash": "SastuVLaHdthENu/dYrSWXKyX2XPO8VVQ1aAoTob2rD6WlRRY5pOZS/nG6UXigOcfBXOt17b8qz70wNXint+bw==",
+>>>>>>> 9dbc7885a654b409197dacd7641ac7bbf7aa5713
   "success": true,
-  "projectFilePath": "c:\\Users\\User\\documents\\sr\\c#\\bankingApp\\bankingApp.csproj",
+  "projectFilePath": "C:\\Users\\Elite folio9470m\\Source\\Repos\\bankingApp\\bankingApp.csproj",
   "expectedPackageFiles": [
+<<<<<<< HEAD
     "C:\\Users\\User\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.net.test.sdk\\17.6.0\\microsoft.net.test.sdk.17.6.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
@@ -92,6 +99,11 @@
     "C:\\Users\\User\\.nuget\\packages\\xunit.extensibility.core\\2.4.2\\xunit.extensibility.core.2.4.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\xunit.extensibility.execution\\2.4.2\\xunit.extensibility.execution.2.4.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.5\\xunit.runner.visualstudio.2.4.5.nupkg.sha512"
+||||||| 744fe68
+    "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+=======
+    "C:\\Users\\Elite folio9470m\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+>>>>>>> 9dbc7885a654b409197dacd7641ac7bbf7aa5713
   ],
   "logs": []
 }
