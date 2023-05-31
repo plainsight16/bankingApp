@@ -117,3 +117,5 @@ C:\Users\Julius Alibrown\Desktop\class\abdulahi\bankingApp\obj\Debug\net7.0\bank
 C:\Users\Julius Alibrown\Desktop\class\abdulahi\bankingApp\obj\Debug\net7.0\bankingApp.genruntimeconfig.cache
 C:\Users\Julius Alibrown\Desktop\class\abdulahi\bankingApp\obj\Debug\net7.0\ref\bankingApp.dll
 >>>>>>> 9dbc7885a654b409197dacd7641ac7bbf7aa5713
+C:\Users\User\documents\sr\c#\bankingApp\bin\Debug\net7.0\bankingApp.xml
+C:\Users\User\documents\sr\c#\bankingApp\obj\Debug\net7.0\bankingApp.xml

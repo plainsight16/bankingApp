@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>bankingApp</name>
+    </assembly>
+    <members>
+        <member name="M:BankingApp.BankAccount.#ctor(System.Double,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor for the BankAccount class
+            </summary>
+            <param name="ID"></param>
+            <param name="username"></param>
+            <param name="name"></param>
+            <param name="PIN"></param>
+            <param name="email"></param>
+            <param name="phone"></param>
+        </member>
+        <member name="M:BankingApp.BankAccount.Withdraw(System.Double)">
+            <summary>
+            Withdraws the specified amount from the account
+            </summary>
+            <param name="amount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.BankAccount.Deposit(System.Double)">
+            <summary>
+            Deposits the specified amount into the account
+            </summary>
+            <param name="amount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.BankAccount.generateAccountNumber">
+            <summary>
+            Generates a random account number for the account
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.BankAccount.generateRandomNumber">
+            <summary>
+            Generates a random 4 digit number
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.BankAccount.getUserName">
+            <summary>
+            Returns the username of the account
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.BankAccount.getEmail">
+            <summary>
+            returns the email of the account
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.BankAccount.getPIN">
+            <summary>
+            returns the pin of the account
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.BankAccount.getAccountNumber">
+            <summary>
+            returns the account number of the account
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.BankAccount.ToString">
+            <summary>
+            Returns the string representation of the account
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:BankingApp.Bank.BankAccounts">
+            <summary>
+            Dictionary to store all the bank accounts
+            </summary>
+            <typeparam name="string"></typeparam>
+            <typeparam name="BankAccount"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="F:BankingApp.Bank.EMAILS">
+            <summary>
+            List to store all the emails
+            </summary>
+            <typeparam name="string"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.Bank.validateAccount(System.String)">
+            <summary>
+            Validates the email address
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.Bank.SignIn(System.String,System.String)">
+            <summary>
+            Signs in the user if the username and PIN are correct
+            </summary>
+            <param name="username"></param>
+            <param name="PIN"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.Bank.CreateAccount(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Creates a new account
+            </summary>
+            <param name="username"></param>
+            <param name="name"></param>
+            <param name="PIN"></param>
+            <param name="email"></param>
+            <param name="phone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.Bank.saveAccounts">
+            <summary>
+            Saves the accounts to a file
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.Bank.retrieveAccounts">
+            <summary>
+            Retrieves the accounts from the file
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.Prompts.retrieveAccountsPrompt">
+            <summary>
+            Prompts the user to retrieve the accounts
+            </summary>
+        </member>
+        <member name="M:BankingApp.Prompts.menu">
+            <summary>
+            Main menu for the banking app
+            </summary>
+        </member>
+        <member name="M:BankingApp.Prompts.subMenu">
+            <summary>
+            Sub menu for the banking app
+            </summary>
+        </member>
+        <member name="M:BankingApp.Prompts.SignInPrompt">
+            <summary>
+            Prompts the user to sign in
+            </summary>
+        </member>
+        <member name="M:BankingApp.Prompts.DepositPrompt">
+            <summary>
+            Prompts the user to deposit
+            </summary>
+        </member>
+        <member name="M:BankingApp.Prompts.WithdrawPrompt">
+            <summary>
+            Prompts the user to withdraw
+            </summary>
+        </member>
+        <member name="M:BankingApp.Prompts.ViewAccountPrompt">
+            <summary>
+            Prompts the user to view the account
+            </summary>
+        </member>
+        <member name="M:BankingApp.Prompts.CreateAccountPrompt">
+            <summary>
+            Prompts the user to create an account
+            </summary>
+        </member>
+        <member name="M:BankingApp.Prompts.exitPrompt">
+            <summary>
+            Prompts the user to exit
+            </summary>
+        </member>
+        <member name="M:BankingApp.Prompts.signOutPrompt">
+            <summary>
+            Prompts the user to sign out
+            </summary>
+        </member>
+        <member name="M:BankingApp.Prompts.saveAccountsPrompt">
+            <summary>
+            Prompts the user to save the accounts
+            </summary>
+        </member>
+        <member name="F:BankingApp.Prompts.MainMenuOptions">
+            <summary>
+            Dictionary containing the main menu options
+            </summary>
+            <typeparam name="string"></typeparam>
+            <typeparam name="Action"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="F:BankingApp.Prompts.SubMenuOptions">
+            <summary>
+            Dictionary containing the sub menu options
+            </summary>
+            <typeparam name="string"></typeparam>
+            <typeparam name="Action"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.Validation.validateEmail">
+            <summary>
+            Validates the email address
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.Validation.validatePhone">
+            <summary>
+            Validates the phone number
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.Validation.validatePIN">
+            <summary>
+            Validates the PIN
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.Validation.validateName">
+            <summary>
+            Validates the name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.Validation.validateUsername">
+            <summary>
+            Validates the username
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BankingApp.Validation.validateAmount">
+            <summary>
+            Validates the amount
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
